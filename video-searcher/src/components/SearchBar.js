@@ -6,14 +6,13 @@ export default class SearchBar extends Component {
   };
 
   onInputChange = (event) => {
-      this.setState({ searchTerm: event.target.value});
+    this.setState({ searchTerm: event.target.value });
   };
 
   onFormSubmit = (event) => {
     event.preventDefault();
 
-    // TODO
-    // Initiate search from YT api
+    this.props.onFormSubmit(this.state.searchTerm);
   };
 
   render() {
