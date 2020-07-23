@@ -1,0 +1,20 @@
+<div className='ui segment'>
+      <div className='ui top attached tabular menu'>
+        <div className='item active'>Accordion</div>
+        <div className='item'>Search</div>
+        <div className='item'>Dropdown</div>
+        <div className='item'>Translate</div>
+      </div>
+      <div className='ui bottom attached active tab segment' data-tab='accordion'>
+        <Accordion data={data} />
+      </div>
+      <div className='ui bottom attached tab segment' data-tab='search'>
+        <Search />
+      </div>
+      <div className='ui bottom attached tab segment' data-tab='dropdown'>
+        <Dropdown options={options} labelText='Pick a color' selected={selected} onSelectedChange={setSelected} />
+      </div>
+      <div className='ui bottom attached tab segment' data-tab='translate'>
+        <div>TODO</div>
+      </div>
+  </div>
