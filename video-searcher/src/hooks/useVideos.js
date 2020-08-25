@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import youtube from '../api/YouTube';
 
 const useVideos = (defaultQuery) => {
-  const KEY = (() => 'AIzaSyCs8aHXgLRSVHLtHetPAdI1EJwMb4IeYmU')();
+  const KEY = 'AIzaSyCs8aHXgLRSVHLtHetPAdI1EJwMb4IeYmU';
   const [videos, setVideos] = useState([]);
   const search = async (term) => {
     try {
